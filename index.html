@@ -1,22 +1,55 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>shibbi's GitHub Pages</title>
+    <title>shibbi's portfolio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="application.css">
   </head>
   <body>
-    <h1>Welcome</h1>
-    <p>To access my projects, please click the following links:
-      <ul>
-        <li>
-          <a href="http://shibbi.github.io/Ashteroids/">Ashteroids (Asteroids with a Pokemon twist)</a>
+    <div class="page-header text-center">
+      <h1>Hi, I'm Shibo!</h1>
+      <h2>Welcome to my portfolio!</h2>
+    </div>
+    <div class="thumbnails">
+      <ul class="clearfix">
+        <li class="thumbnail col-md-4 col-sm-12"
+            style="background-image: url('https://s3-us-west-1.amazonaws.com/shibbi-portfolio/petbnb.jpg')">
+          <a href="http://petbnb.shibo.io/">
+            <div class="title">
+              PetBnB
+            </div>
+          </a>
         </li>
-        <li>
-          <a href="http://shibbi.github.io/CSSFriends/">CSS Sample</a>
+        <li class="thumbnail col-md-4 col-sm-12"
+            style="background-image: url('https://s3-us-west-1.amazonaws.com/shibbi-portfolio/ashteroids.jpg')">
+          <a href="http://shibbi.github.io/Ashteroids/">
+            <div class="title">
+              Ashteroids
+            </div>
+          </a>
         </li>
-        <li>
-          <a href="http://shibbi.github.io/TicTacToe/">Tic Tac Toe</a>
+        <li class="thumbnail col-md-4 col-sm-12"
+            style="background-image: url('https://s3-us-west-1.amazonaws.com/shibbi-portfolio/tictactoe.jpg')">
+          <a href="http://shibbi.github.io/TicTacToe/">
+            <div class="title">
+              Tic Tac Toe
+            </div>
+          </a>
         </li>
       </ul>
-    </p>
+    </div>
   </body>
 </html>
+
+<script type="text/javascript">
+  $("li.thumbnail a").hover(function (mouseEnter) {
+    $(mouseEnter.currentTarget).find('.title').addClass('hover');
+  }, function (mouseLeave) {
+    $(mouseLeave.currentTarget).find('.title').removeClass('hover');
+  });
+</script>
