@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
 
-* { font-family: 'Raleway', cursive; }
+* { font-family: 'Raleway', sans-serif; }
 
 body { background-color: aliceblue; }
 
@@ -14,6 +14,11 @@ body { background-color: aliceblue; }
 h1 {
   margin: 0;
   padding-top: 20px;
+}
+
+.intro, .footer {
+  padding-top: 20px;
+  font-size: 20px;
 }
 
 ul {
@@ -61,4 +66,9 @@ li a .title {
 
 li a .title.hover {
   display: block;
+}
+
+.thumbnail-desc {
+  padding-top: 10px;
+  font-size: 14px;
 }
