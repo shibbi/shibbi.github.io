@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>shibo's portfolio</title>
+    <title>Shibo Fang</title>
     <link rel="shortcut icon" href="https://s3-us-west-1.amazonaws.com/shibbi-portfolio/favicon.ico" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="application.js"></script>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
@@ -13,71 +14,50 @@
     <link rel="stylesheet" href="application.css">
   </head>
   <body>
-    <div class="page-header text-center">
-      <h1>Hi, I'm Shibo!</h1>
-      <h2>Welcome to my portfolio!</h2>
-    </div>
-    <p class="intro text-center">
-      I'm a Rails developer and I can make websites for you! Please check out a few of my projects below!
-      <br>Want to chat about an opportunity? Please click <a href="https://calendly.com/shibo" target=_blank>here</a> to book a time!
-    </p>
-    <div class="thumbnails">
-      <ul class="clearfix">
-        <li class="thumbnail col-md-4 col-sm-12"
-            style="background-image: url('https://s3-us-west-1.amazonaws.com/shibbi-portfolio/petbnb.jpg')">
-          <a href="http://petbnb.shibo.io/" target=_blank>
+    <div class="container">
+      <div class="header text-center">
+        <h1>Hi, I'm Shibo!</h1>
+        <h3>I'm a full stack developer (Backbone.js + Rails stack). Please check out a few of my projects below!</h3>
+      </div>
+      <div class="row">
+        <div class="project-container text-center col-sm-12 col-md-6 col-lg-4">
+          <a href="http://petbnb.shibo.io/" class="project center-block" id="petbnb" target=_blank>
             <div class="title">
               PetBnB
             </div>
           </a>
-          <div class="thumbnail-desc">
+          <div class="desc">
             AirBnB for pet owners to find pet-sitters.
             Mixed Rails/Backbone app consuming RESTful JSON Rails API.
-            <a href="https://github.com/shibbi/petbnb" target=_blank>github</a>
+            <br><a href="https://github.com/shibbi/petbnb" target=_blank>github</a>
           </div>
-        </li>
-        <li class="thumbnail col-md-4 col-sm-12"
-            style="background-image: url('https://s3-us-west-1.amazonaws.com/shibbi-portfolio/ashteroids.jpg')">
-          <a href="http://shibo.io/Ashteroids/" target=_blank>
+        </div>
+        <div class="project-container text-center col-sm-12 col-md-6 col-lg-4">
+          <a href="http://shibo.io/Ashteroids/" class="project center-block" id="ashteroids" target=_blank>
             <div class="title">
               Ashteroids
             </div>
           </a>
-          <div class="thumbnail-desc">
+          <div class="desc">
             Classic game with a Pokemon twist, rebuilt with JavaScript for the browser.
-            <a href="https://github.com/shibbi/ashteroids" target=_blank>github</a>
+            <br><a href="https://github.com/shibbi/ashteroids" target=_blank>github</a>
           </div>
-        </li>
-        <li class="thumbnail col-md-4 col-sm-12"
-            style="background-image: url('https://s3-us-west-1.amazonaws.com/shibbi-portfolio/tictactoe.jpg')">
-          <a href="http://shibo.io/TicTacToe/" target=_blank>
+        </div>
+        <div class="project-container text-center col-sm-12 col-md-6 col-lg-4">
+          <a href="http://shibo.io/TicTacToe/" class="project center-block" id="tictactoe" target=_blank>
             <div class="title">
               Tic Tac Toe
             </div>
           </a>
-          <div class="thumbnail-desc">
-            Clone of Rails with basic server and ActiveRecord functionality.
-            <a href="https://github.com/shibbi/railsliteintegrated" target=_blank>github</a>
+          <div class="desc">
+            Simple Tic Tac Toe game made in JavaScript.
+            <br><a href="https://github.com/shibbi/tictactoe" target=_blank>github</a>
           </div>
-        </li>
-      </ul>
+        </div>
+      </div>
+      <div class="footer text-center">
+        Want to get in touch? You can reach me <a href="mailto:hi@shibo.io">here</a>!
+      </div>
     </div>
   </body>
 </html>
-
-<script type="text/javascript">
-  $("li.thumbnail a").hover(function (mouseEnter) {
-    $(mouseEnter.currentTarget).find('.title').addClass('hover');
-  }, function (mouseLeave) {
-    $(mouseLeave.currentTarget).find('.title').removeClass('hover');
-  });
-
-  // google analytics
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-62495737-1', 'auto');
-  ga('send', 'pageview');
-</script>
